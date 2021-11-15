@@ -1,0 +1,54 @@
+#contactUs
+{
+	margin-top:150px ;
+}
+
+#contactUs h1
+{
+	margin:5px 15px ;
+}
+
+#contactUs section
+{
+	margin:20px auto ;
+}
+
+#contactUs img
+{
+	height:12vw;
+	max-height:2.5rem;
+	width: 12vw;
+	max-width:2.5rem;
+
+	margin : 5px 10px ;
+
+	border-radius: 50% ;
+}
+#contactUs button
+{
+	background-color:transparent ;
+	border:none
+}
+#contactUs button:hover
+{
+	background-color:transparent ;
+}
+
+#special_button button
+{
+   font-size: 1.8rem;
+   padding:10px 20px ;
+   margin:5px 10px ;
+   border : 2px solid white ;
+   color:black ;
+   background-color: white ;
+   border-radius:5px ;
+   transition: 1s;
+}
+
+#special_button button:hover
+{
+   background-color:transparent;
+   color : white ;
+   transition: 1s;
+}
