@@ -38,7 +38,7 @@ const design_member = [
    } ,
    {
       name : "Ankit Saha" ,
-      img : "assets/Members/Design/Ankit_2.jfif" ,
+      img : "assets/Members/Design/Ankit.jfif" ,
    },
  ] ;
 

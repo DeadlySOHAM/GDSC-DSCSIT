@@ -8,6 +8,11 @@
    border:none ;
    outline:none ;
    
+
+   /* Font */
+   font-family: 'Roboto', sans-serif;
+   font-weight:500 ;
+   
    /* Disabling selection */
    -webkit-user-select: none;
 	-khtml-user-select: none;
@@ -18,21 +23,20 @@
 }
 
 html{
-   scroll-behavior: smooth ;
+   scroll-behavior : smooth ;
    
 }
 
 body
 {
    background-color: #202020 ;
-   font-family: -webkit-pictograph ;
    color:white ;
 }
 
 h1
 {
    font-size: 2rem ;
-   text-shadow: 0 0 10px rgb(105, 182, 255) ;
+   /* text-shadow: 0 0 10px rgb(105, 182, 255) ; */
 }
 
 button
@@ -45,15 +49,13 @@ button
 
    color:black ;
    background-color: white ;
-   text-shadow: 0 0 10px black ;
-   box-shadow: 0 0 10px rgb(105, 182, 255);
+   /* box-shadow: 0 0 10px rgb(105, 182, 255); */
    transition: 1s;
 }
 
 button:hover
 {
    background-color:transparent;
-   text-shadow: 0 0 10px  rgb(105, 182, 255);
    color : white ;
    transition: 1s;
 }
@@ -71,7 +73,6 @@ button:hover
 
 #navbar a
 {
-   font-family: cursive ;
    font-size: 1.25rem ;
    text-decoration: none ;
    color : white ;
