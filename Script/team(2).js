@@ -43,12 +43,12 @@ const design_member = [
  ] ;
 
 
-
 // Outreach
-const outreach_members = [
+const outreach_members =
+[
    {
-      name:"Snehapriya Jha" ,
-      img:"assets/Members/Outreach/Snehapriya.jfif" ,
+      name : "Snehapriya Jha" ,
+      img : "assets/Members/Outreach/Snehapriya.jfif" ,
    } ,
 ] ;
 
@@ -56,8 +56,8 @@ const outreach_members = [
 // Problem Solving
 const problem_solving_members = [
    {
-      name:"Anubhav Mishra" ,
-      img:"assets/Members/Problem Solving/Anubhav.jfif" ,
+      name : "Anubhav Mishra" ,
+      img : "assets/Members/Problem Solving/Anubhav.jfif" ,
    },
 ];
 
@@ -75,7 +75,7 @@ const program_management_members = [
 const public_relation_members = [
    {
       name:"Rimika Chowdhary" ,
-      img:"assets/Members/Public Relations/Rimika.jfif",
+      img:"assets/Members/Public Relations/Rimika.jfif" ,
    },
 ]
 
@@ -101,11 +101,11 @@ const woman_empowerment_members = [
    //    name : "MotherFuker Chuitya" ,
    //    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5Y9449ctL2wjAbYL4Df8AsCDSU1onuqAbA&usqp=CAU" ,
    // },
-] ;
+];
+
 
 
 // On Screen Display
-
 
 onload = () => show() ;
 
@@ -155,6 +155,7 @@ function show()
 
 }
 
+
 function make(heading , id )
 {
    let element = "<h1 class=\"heading\">"+heading+"</h1> \
@@ -166,9 +167,9 @@ function make(heading , id )
 
 function render(tag,x)
 {
-   for (let i=0;i<x.length;i++)
+   for (let i=0 ; i<x.length ; i++)
    {
-      let element = "<section class=\"card\"><img src=\" "+x[i].img+"\" alt=\" "+x[i].name+"\"><section>"+x[i].name+"</section></section>" ;
+      let element = "<section data-aos=\"fade-in\" class=\"card\"><img src=\" "+x[i].img+"\" alt=\" "+x[i].name+"\"><section >"+x[i].name+"</section></section>" ;
       tag.insertAdjacentHTML("beforeend",element) ;
    }
 }

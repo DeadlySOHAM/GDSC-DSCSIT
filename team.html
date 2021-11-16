@@ -7,17 +7,18 @@
    <link rel="stylesheet" type="text/css" href="index.css">
    <link rel="stylesheet" type="text/css" href="CSS/team.css">
    <link rel="icon" href="assets/GDSC Icon.png">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    <title>GDSC Team</title>
 </head>
 <body>
-   <section id="navbar">
+   <section  data-aos="fade-in" id="navbar">
       <img src="assets/GDSC Icon.png"/>
    </section>
 
    <h1 class="team">The Team</h1>
 
    <!-- Facilator -->
-   <section id="Facilator">
+   <section  data-aos="fade-in" id="Facilator">
       <div class="quotes">
          <img src="assets/Members/Faccilator/Oindrilla.jfif" alt="Oindrila Das"/>
          <div>Facilator</div>
@@ -31,11 +32,17 @@
    <!-- Core Members -->
    </br>
    <section id="coreMembers"> </section>
-         
 
-   
+
    <script src="index.js"></script>
    <script src="Script/team.js"></script>
    <script src="Script/team(2).js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+        offset:300 ,
+        duration :1000,
+     });
+   </script>
 </body>
 </html>
