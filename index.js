@@ -1,5 +1,5 @@
 // Disable Right Click
-// document.oncontextmenu = new Function("return false;");
+document.oncontextmenu = new Function("return false;");
 
 
 const nav = document.getElementById('navbar') ;
