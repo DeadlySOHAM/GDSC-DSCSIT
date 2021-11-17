@@ -1,0 +1,41 @@
+#navbar
+{
+   flex-direction: column ;
+   align-items: flex-start ;
+   justify-content: center ;
+}
+
+#navbar div
+{
+   width:100% ;
+   display: flex ;
+   flex-direction: row ;
+   justify-content: space-between;
+}
+
+#navbar ul
+{
+   display:none ;
+   flex-direction: column;
+   align-items: center ;
+   width:100% ;
+}
+
+#navbar li
+{
+   padding:10px 5px ;
+   margin:5px 5px ;
+}
+
+#hamburger-icon
+{
+   display : flex ;
+   flex-direction: column ;
+   justify-content: center ;
+   align-items: flex-end ;
+}
+
+.active ul
+{
+   display: flex !important ;
+}

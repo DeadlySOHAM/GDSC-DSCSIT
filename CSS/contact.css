@@ -1,6 +1,6 @@
 #contactUs
 {
-	margin-top:150px ;
+   margin-bottom : 75px ;
 }
 
 #contactUs h1
@@ -26,6 +26,14 @@
 	/* box-shadow :0 0 10px red ; 
 	background-color:rgb(255, 0 , 0 , 0.2)  ; */
 }
+
+
+.links
+{
+   width:99vw ;
+   max-width: 400px ;
+}
+
 #contactUs button
 {
 	background-color:transparent ;
@@ -48,15 +56,15 @@
 
    color:black ;
    background-color: white ;
-   /* text-shadow: 0 0 10px black ;
-   box-shadow: 0 0 10px rgb(105, 182, 255); */
+   text-shadow: 0 0 10px black ;
+   box-shadow: 0 0 10px rgb(105, 182, 255);
    transition: 1s;
 }
 
 #special_button button:hover
 {
    background-color:transparent;
-   /* text-shadow: 0 0 10px  rgb(105, 182, 255); */
+   text-shadow: 0 0 10px  rgb(105, 182, 255);
    color : white ;
    transition: 1s;
 }

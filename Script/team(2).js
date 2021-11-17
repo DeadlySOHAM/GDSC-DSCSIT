@@ -8,7 +8,6 @@ const app_dev_member = [
       name:"Ekhagni Mukherjee" ,
       img : "assets/Members/App Dev/Ekhagni.jfif " ,
    },
-
 ] ;
 
 
