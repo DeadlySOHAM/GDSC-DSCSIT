@@ -11,6 +11,8 @@
    <link rel="stylesheet" type="text/css" href="CSS/home.css">
    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
    <link rel="stylesheet" type="text/css" href="CSS/team.css">
+   <link rel="stylesheet" type="text/css" href="CSS/light.css">
+   <link rel="stylesheet" type="text/css" href="CSS/glow.css">
    <link rel="stylesheet" media="screen and (max-width:600px)" href="CSS/phone.css">
 
    <!-- icon -->
@@ -22,7 +24,7 @@
    <!-- Font -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
 
    <title>GDSC</title>
 
@@ -30,6 +32,7 @@
 
 <body>
 
+   <!--                               Navbar                                  -->
    <section id="navbar">
       <div>
          <span> <img align="left" src="assets/gdsc nav image.jpg" alt="GDSC ICON" /> </span>
@@ -45,8 +48,10 @@
 
       <section id="spaceBetween" ></section>
 
-      
-      <section id="Picture"><img src="assets/gdsc bg image.jpg" /></section>
+   
+
+   <!--                                      Background Image                               -->
+   <section id="Picture"><img src="assets/gdsc bg image.jpg" /></section>
 
 
    <section  data-aos="fade-in" id=container>
@@ -64,6 +69,9 @@
 
       <section id="spaceBetween" ></section>
 
+
+
+      <!--                               The Team                                       -->
       <section  data-aos="fade-in" id="team">
          <h1>Get to know the team</h1>
          <section class="comment" >We’ve got a strong team filled with caffeine addicted developers, gradients loving designers and machine like working managers.</section>
@@ -73,38 +81,47 @@
 
       <section id="spaceBetween" ></section>
 
+
+
+
+      <!--                           Contact Us                                          -->
       <section  data-aos="fade-in"  id="contactUs">
          <section  class="group">
             <h1>Contact Us</h1>
             <section class="comment">We’re very active on social media.</section>
             <section  class="links">
-               <button onclick=showGroups() id="whatsappIcon">
+               <span onclick=showGroups() class="body" id="whatsappIcon">
                   <img src="assets/whatsapp icon.webp" alt="WhatsApp Group" />
-               </button>
-               <button class="link" onclick=goTo(3)><!--Instagram-->
+               </span>
+               <span class="link" onclick=goTo(3)><!--Instagram-->
                   <img src="assets/insta icon.png" id="instaIcon" alt="--Instagram--">
-               </button>
-               <button class="link" onclick=goTo(4)><!--Twitter-->
+               </span>
+               <span class="link" onclick=goTo(4)><!--Twitter-->
                   <img src="https://abs.twimg.com/responsive-web/client-web/icon-svg.168b89d5.svg" />
-               </button>
-               <button class="link" onclick=goTo(5)><!--Facebook-->
+               </span>
+               <span class="link" onclick=goTo(5)><!--Facebook-->
                   <img src="assets/Facebook icon.webp" alt="Facebook">
-               </button>
-               <button class="link" onclick=goTo(6)><!--Discord-->
+               </span>
+               <span class="link" onclick=goTo(6)><!--Discord-->
                   <img src="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=s180-rw" srcset="https://play-lh.googleusercontent.com/0oO5sAneb9lJP6l8c6DH4aj6f85qNpplQVHmPmbbBxAukDnlO7DarDW0b-kEIHa8SQ=s360-rw 2x" aria-hidden="true" alt="Cover art" itemprop="image" data-atf="false" data-iml="9411.5">
-               </button>
-               <button class="link" onclick=goTo(7)><!--You Tube-->
+               </span>
+               <span class="link" onclick=goTo(7)><!--You Tube-->
                   <img src="assets/You tube icon.png" alt="You Tube"/>
-               </button>
+               </span>
             </section>
          </section>
       </section>
 
+      <button id="mode" >Light</button>
+      <button id="glow_h1" >GLOW</button>
+      <button id="glow_btn" >GLOW Button</button>
+      
    </section>
 
    <script src="index.js"></script>
    <script src="Script/team.js"></script>
    <script src="Script/contact.js"></script>
+   <script src="Script/Navbar.js"></script>
 
    <!-- Animation -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

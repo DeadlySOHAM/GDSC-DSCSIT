@@ -1,0 +1,18 @@
+.light , .light *
+{
+   background-color: white !important ;
+   color:black !important ;
+   font-weight: 400 !important  ;
+}
+
+.light button
+{
+   outline :none;
+   border:2px solid black ;
+}
+
+.light button:hover
+{
+   background-color: #000 !important ;
+   color : #ffffff !important ;
+}

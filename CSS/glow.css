@@ -1,0 +1,9 @@
+.glow_h1 h1
+{
+   text-shadow: 0 0 10px rgb(105, 182, 255) ;
+}
+
+.glow_btn button
+{
+   box-shadow: 0 0 10px rgb(105, 182, 255);
+}

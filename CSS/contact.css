@@ -13,6 +13,13 @@
 	margin:20px auto ;
 }
 
+#contactUs span
+{
+   padding: 5px 15px ;
+   margin : 5px 5px ;
+   display: inline-block ;
+}
+
 #contactUs img
 {
 	height:12vw;
@@ -32,39 +39,4 @@
 {
    width:99vw ;
    max-width: 400px ;
-}
-
-#contactUs button
-{
-	background-color:transparent ;
-	box-shadow: none ;
-	border:none
-}
-#contactUs button:hover
-{
-	background-color:transparent ;
-	box-shadow: none ;
-}
-
-#special_button button
-{
-   font-size: 1.8rem;
-   padding:10px 20px ;
-   margin:5px 10px ;
-   border : 2px solid white ;
-   border-radius:5px ;
-
-   color:black ;
-   background-color: white ;
-   text-shadow: 0 0 10px black ;
-   box-shadow: 0 0 10px rgb(105, 182, 255);
-   transition: 1s;
-}
-
-#special_button button:hover
-{
-   background-color:transparent;
-   text-shadow: 0 0 10px  rgb(105, 182, 255);
-   color : white ;
-   transition: 1s;
 }

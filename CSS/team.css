@@ -55,7 +55,7 @@
    flex-direction: column;
 }
 
-.quotes * , .Members *
+.quotes *
 {
    font-weight: bold;
 }
