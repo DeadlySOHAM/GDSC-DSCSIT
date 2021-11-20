@@ -1,8 +1,3 @@
-#Card
-{
-   display:inline-block ;
-}
-
 #Cards
 {
    display:flex ;
@@ -13,7 +8,7 @@
 
 #InsideCard
 {
-   width : 95vw ;
+   width : 80vw ;
    max-width : 450px ;
    margin : auto ; 
 
@@ -33,7 +28,7 @@
 }
 
 #Card img {
-   width : 95vw ;
+   width : 80vw ;
    max-width: 450px ;
 
    margin :0;
