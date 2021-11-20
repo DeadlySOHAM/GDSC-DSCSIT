@@ -8,9 +8,8 @@
 
    <!-- CSS -->
    <link rel="stylesheet" type="text/css" href="index.css">
-   <link rel="stylesheet" type="text/css" href="CSS/home.css">
    <link rel="stylesheet" type="text/css" href="CSS/contact.css">
-   <link rel="stylesheet" type="text/css" href="CSS/team.css">
+   <link rel="stylesheet" type="text/css" href="CSS/dark.css">
    <link rel="stylesheet" type="text/css" href="CSS/light.css">
    <link rel="stylesheet" type="text/css" href="CSS/glow.css">
    <link rel="stylesheet" media="screen and (max-width:600px)" href="CSS/phone.css">
@@ -30,7 +29,7 @@
 
 </head>
 
-<body>
+<body class="light">
 
    <!--                               Navbar                                  -->
    <section id="navbar">
@@ -43,10 +42,9 @@
          <li> <a href="#team">The Team</a> </li>
          <li> <a href="#contactUs">Contact Us</a> </li>
       </ul>
-      <!-- <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-1shn170" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon" tabindex="-1" title="Menu"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg> -->
    </section>
 
-      <section id="spaceBetween" ></section>
+      <section class="spaceBetween" ></section>
 
    
 
@@ -57,7 +55,7 @@
    <section  data-aos="fade-in" id=container>
       
 
-      <section id="spaceBetween" ></section>
+      <section class="spaceBetween" ></section>
 
       <section  data-aos="fade-in" id="home">
          <h1>Our Focus</h1>
@@ -67,7 +65,7 @@
          </section>
       </section>
 
-      <section id="spaceBetween" ></section>
+      <section class="spaceBetween" ></section>
 
 
 
@@ -79,9 +77,20 @@
       </section>
 
 
-      <section id="spaceBetween" ></section>
+      <section class="spaceBetween" ></section>
 
 
+      <!--                             Blogs                                              -->
+      <section class="spaceBetween" ></section>
+      <section  data-aos="fade-in" id="team">
+         <h1>Our Blogs</h1>
+         <section class="comment" >Our prime focus is to learn and disseminate knowledge. Our team roll out blogs regularly on medium.</section>
+         <button onclick="blog()">Check Out</button>
+      </section>
+
+
+
+      <section class="spaceBetween" ></section>
 
 
       <!--                           Contact Us                                          -->
@@ -118,10 +127,10 @@
       
    </section>
 
+   <!-- Scripts -->
    <script src="index.js"></script>
-   <script src="Script/team.js"></script>
-   <script src="Script/contact.js"></script>
    <script src="Script/Navbar.js"></script>
+   <script src="Script/contact.js"></script>
 
    <!-- Animation -->
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

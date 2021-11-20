@@ -1,0 +1,44 @@
+.dark *
+{
+   color:#ffffff;
+}
+
+
+.dark
+{
+   background-color: #333333 ;
+   color:white ;
+}
+
+
+.dark button
+{
+   border : 2px solid white ;
+   color:#000 ;
+   background-color: white ;
+}
+
+
+.dark button:hover
+{
+   color : white ;
+   background-color: transparent ;
+}
+
+.dark #navbar
+{
+   background-color: #333333;
+}
+
+
+.dark .navbar-scrolled
+{
+   background-color: #000 !important ;
+   box-shadow : 0 0 10px #000 ;
+}
+
+
+.dark #hamburger-icon
+{
+   color:white ;
+}

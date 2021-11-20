@@ -1,18 +1,55 @@
-.light , .light *
+.light
 {
-   background-color: white !important ;
-   color:black !important ;
-   font-weight: 400 !important  ;
+   background-color: white ;
+   color:black ;
+}
+
+.light section
+{
+   color : #000 ;
+   font-weight: 400  ;
+}
+
+
+.light h1
+{
+   color : #000;
 }
 
 .light button
 {
    outline :none;
+   background-color: #000 ;
+   color:#ffffff ;
    border:2px solid black ;
 }
 
 .light button:hover
 {
-   background-color: #000 !important ;
-   color : #ffffff !important ;
+   background-color: #ffffff ;
+   color : #000 ;
+}
+
+.light #navbar
+{
+   background-color: white ;
+   color : black ;
+}
+
+.light #navbar *
+{
+   color : #000  ;
+   font-weight: 400  ;
+}
+
+.light #navbar a:hover
+{
+   font-weight: bold  ;
+}
+
+
+.light .comment p
+{
+   color : #000 ;
+   font-weight: 400  ;
 }

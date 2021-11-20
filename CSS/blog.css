@@ -1,0 +1,59 @@
+#Card
+{
+   display:inline-block ;
+}
+
+#Cards
+{
+   display:flex ;
+   flex-direction: column;
+   align-items: center ;
+}
+
+
+#InsideCard
+{
+   width : 95vw ;
+   max-width : 450px ;
+   margin : auto ; 
+
+   display : flex ;
+   flex-direction: column ;
+   justify-content: center ;
+   align-items: center ;
+
+   border-top-left-radius : 25px ;
+   border-top-right-radius : 25px ;
+   box-shadow: 0 0 10px #000 ;
+}
+
+#InsideCard *
+{
+   padding : 0 25px 25px 25px ;
+}
+
+#Card img {
+   width : 95vw ;
+   max-width: 450px ;
+
+   margin :0;
+   padding :0;
+   border-top-left-radius : 25px ;
+   border-top-right-radius : 25px ;
+}
+
+#Description
+{
+   opacity: 0.5 ;
+}
+
+#Speaker img
+{
+   width : 100px ;
+   border-radius:50%;
+}
+
+.glow_btn #InsideCard
+{
+   box-shadow: 0 0 10px rgb(105, 182, 255);
+}

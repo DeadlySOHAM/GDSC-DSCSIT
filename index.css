@@ -7,11 +7,9 @@
    background-color: transparent ;
    border:none ;
    outline:none ;
-   color:#ffffff;
 
    /* Font */
    font-family: 'Roboto', sans-serif;
-   font-weight:200 ;
    
    /* Disabling selection */
    -webkit-user-select: none;
@@ -29,12 +27,6 @@ html{
 }
 
 
-body
-{
-   background-color: #333333 ;
-   color:white ;
-}
-
 h1
 {
    font-size: 2rem ;
@@ -47,11 +39,8 @@ button
    font-size: 1.8rem;
    padding:10px 20px ;
    margin:5px 10px ;
-   border : 2px solid white ;
    border-radius:5px ;
 
-   color:black ;
-   background-color: white ;
    transition: 1s;
 }
 
@@ -59,7 +48,6 @@ button
 button:hover
 {
    background-color:transparent;
-   color : white ;
    transition: 1s;
 }
 
@@ -72,17 +60,19 @@ button:hover
 
 #navbar
 {
-   background-color: #333333;
    height:fit-content ;
    min-height: 3rem ;
-   
-   padding-right : 20px ;
-   position:sticky ;
+
+   min-width:fit-content ;
+   width:100%;
+   padding-right:1.5vw;
 
    display : flex ;
    flex-direction: row ;
    justify-content: space-between ;
    align-items: center ;
+
+   position:sticky ;
    top:0 ;
 
 }
@@ -119,7 +109,6 @@ button:hover
 
 .navbar-scrolled
 {
-   background-color: black !important ;
    box-shadow : 0 0 10px black ;
 }
 
@@ -130,6 +119,7 @@ button:hover
    max-height : 1.25rem ;
    margin : 5px 10px ;
    border-radius : 5px ;
+   margin-top:0;
    display : flex !important ;
 }
 
@@ -137,7 +127,6 @@ button:hover
 #hamburger-icon
 {
    display:none ;
-   color:white ;
    height: 1.5rem ;
    margin:5px 10px ;
 }
@@ -156,7 +145,7 @@ button:hover
 }
 
 
-#spaceBetween
+.spaceBetween
 {
    margin:50px auto ;
 }
@@ -165,4 +154,39 @@ button:hover
 #Picture img
 {
    width:100%;
+}
+
+
+
+#home
+{
+   margin-bottom : 75px ;
+}
+
+#home section
+{
+   margin:25px auto
+}
+
+#home p
+{
+   margin:10px auto ;
+}
+
+
+
+#team
+{
+   margin-bottom : 75px ;
+}
+
+#team section
+{
+   margin:20px auto ;
+}
+
+
+#coreMembers
+{
+   margin-bottom:350px;
 }
