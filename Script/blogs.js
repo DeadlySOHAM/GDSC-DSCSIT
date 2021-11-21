@@ -88,14 +88,14 @@ function show(x)
 function render(x)
 {
    let element = " <section class=\"spaceBetween\" ></section> \
-      <section id=\"Card\"> \
-         <section id=\"InsideCard\"> \
-            <section id=\"Image\"><img src=\""+x.blogImg+"\" /></section> \
-            <h1>"+x.title+"</h1> \
-            <section id=\"Description\">"+x.description+"</section> \
-            <section id=\"Speaker\"> \
+      <section class=\"Card\"> \
+         <section class=\"InsideCard\"> \
+            <section class=\"Image\"><img src=\""+x.blogImg+"\" /></section> \
+            <h1 class=\"title\">"+x.title+"</h1> \
+            <section class=\"Description\">"+x.description+"</section> \
+            <section class=\"Speaker\"> \
                <img src=\""+x.speakerImg+"\"/> \
-               <section id=\"SpeakerName\">"+x.speakerName+"</section> \
+               <section class=\"SpeakerName\">"+x.speakerName+"</section> \
             </section> \
          </section> \
       </section>" ;
