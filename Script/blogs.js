@@ -68,7 +68,7 @@ const Cards = document.getElementById('Cards');
 
 window.addEventListener('scroll',()=>{
    const {scrollHeight,scrollTop,clientHeight}=document.documentElement ;
-   if(scrollTop+clientHeight>=scrollHeight)
+   if( scrollTop+clientHeight >= (scrollHeight-100))
       show(i+3);
 }) ;
 
