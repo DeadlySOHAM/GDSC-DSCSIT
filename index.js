@@ -1,5 +1,21 @@
-// ----------------------------- Disabling inspect options
+var light = localStorage.getItem("gdsc-dscsit-light-mode") ;
 
+
+
+
+onload=()=>{
+   if(light=="false")
+      lightDarkEventHandler("false");
+   else if (light==null)
+      localStorage.setItem("gdsc-dscsit-light-mode","true");
+}
+
+
+
+
+
+// ----------------------------- Disabling inspect options
+/*
 document.onkeydown = function(e) {
    if(event.keyCode == 123) {
       return false;
@@ -18,7 +34,7 @@ document.onkeydown = function(e) {
    }
  }
    document.oncontextmenu = () =>{ return false ;}
-   
+   */
 //  --------------------------------
 
 
@@ -27,16 +43,9 @@ document.onkeydown = function(e) {
 const a = document.getElementById('mode') ;
 
 a.addEventListener("click",(event)=>{
-   if(a.innerHTML == "Dark" )
-      a.innerHTML = "Light" ;
-   else
-      a.innerHTML = "Dark" ;   
-   let v = document.getElementsByTagName('body');
-   for(let i=0;i<v.length;i++)
-   {
-      v[i].classList.toggle("light");
-      v[i].classList.toggle("dark");
-   }
+   light = light=="true" ? "false":"true";
+   lightDarkEventHandler(light);
+   localStorage.setItem("gdsc-dscsit-light-mode",light);
 }) ;
 
 
@@ -45,10 +54,10 @@ a.addEventListener("click",(event)=>{
 const y = document.getElementById('glow_h1') ;
 
 y.addEventListener("click",(event)=>{
-   if(y.innerHTML == "Glow" )
-      y.innerHTML = "No Glow" ;
+   if(y.textContent == "Glow" )
+      y.textContent = "No Glow" ;
    else
-      y.innerHTML = "Glow" ;   
+      y.textContent = "Glow" ;   
    let v = document.getElementsByTagName('body');
    for(let i=0;i<v.length;i++)
       v[i].classList.toggle("glow_h1");
@@ -60,10 +69,10 @@ y.addEventListener("click",(event)=>{
 const z = document.getElementById('glow_btn') ;
 
 z.addEventListener("click",(event)=>{
-   if(z.innerHTML == "Glow Button" )
-      z.innerHTML = "No Glow" ;
+   if(z.textContent == "Glow Button" )
+      z.textContent = "No Glow" ;
    else
-      z.innerHTML = "Glow Button" ;   
+      z.textContent = "Glow Button" ;   
    let v = document.getElementsByTagName('body');
    for(let i=0;i<v.length;i++)
       v[i].classList.toggle("glow_btn");
@@ -71,7 +80,25 @@ z.addEventListener("click",(event)=>{
 
 
 // Redirect to Team Page
-const team = () =>  window.location.href="team.html";
+const team = () =>  window.location.href="OtherHtml/team.html";
 
 //  redirect to blog page
-const blog = () => window.location.href="blog.html" ;
+const blog = () =>{ window.location.href="OtherHtml/blog.html";console.log("fuck")} ;
+
+
+
+// Light / Dark mode Event Handler
+function lightDarkEventHandler(d)
+{
+   if(a.textContent == "Dark" )
+      a.textContent = "Light" ;
+   else
+      a.textContent = "Dark" ;   
+   let v = document.getElementsByTagName('body');
+   for(let i=0;i<v.length;i++)
+   {
+      v[i].classList.toggle("light");
+      v[i].classList.toggle("dark");
+   }
+   localStorage.setItem("gdsc-dscsit-light-mode",d);
+}

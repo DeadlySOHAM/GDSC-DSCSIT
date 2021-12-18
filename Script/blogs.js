@@ -59,29 +59,29 @@ const blogList = [
 
 
 
-
-
-
 var i=0 ;
 
 const Cards = document.getElementById('Cards');
 
+onload = () =>{
+   show(i+2);
+   
+   // Light / Dark mode
+   if(light=="false")
+      lightDarkEventHandler("false");
+}
+
 window.addEventListener('scroll',()=>{
    const {scrollHeight,scrollTop,clientHeight}=document.documentElement ;
-   if( scrollTop+clientHeight >= (scrollHeight-100))
+   if(scrollTop+clientHeight>=(scrollHeight-100))
       show(i+3);
 }) ;
-
-
-window.onload = show(i+2) ;
 
 
 function show(x)
 {
    while( x-i>=0 && i<blogList.length)
-   {
       render(blogList[i++]) ;
-   }
 }
 
 

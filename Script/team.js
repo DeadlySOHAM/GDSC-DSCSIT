@@ -2,11 +2,11 @@
 const app_dev_member = [
    {
       name:"Md Zaid Siddique" ,
-      img : "assets/Members/App Dev/Zaid.jfif " ,
+      img : "../assets/Members/App Dev/Zaid.jfif " ,
    },
    {
       name:"Ekhagni Mukherjee" ,
-      img : "assets/Members/App Dev/Ekhagni.jfif " ,
+      img : "../assets/Members/App Dev/Ekhagni.jfif " ,
    },
 ] ;
 
@@ -15,7 +15,7 @@ const app_dev_member = [
 const cloud_platform_members = [
    {
       name:"Anusha Bera",
-      img:"assets/Members/Cloud Platform/Anusha.jfif",
+      img:"../assets/Members/Cloud Platform/Anusha.jfif",
    },
 ] ;
 
@@ -24,7 +24,7 @@ const cloud_platform_members = [
 const competitive_coding_members = [
    {
       name:"Sugato" ,
-      img:"assets/Members/Competitive Coding/Sugato.jfif" ,
+      img:"../assets/Members/Competitive Coding/Sugato.jfif" ,
    },
 ] ;
 
@@ -33,11 +33,11 @@ const competitive_coding_members = [
 const design_member = [
    {
       name : "Subhanjan Dutta" ,
-      img : "assets/Members/Design/Subhanjan.jfif" ,
+      img : "../assets/Members/Design/Subhanjan.jfif" ,
    } ,
    {
       name : "Ankit Saha" ,
-      img : "assets/Members/Design/Ankit.jfif" ,
+      img : "../assets/Members/Design/Ankit.jfif" ,
    },
  ] ;
 
@@ -47,7 +47,7 @@ const outreach_members =
 [
    {
       name : "Snehapriya Jha" ,
-      img : "assets/Members/Outreach/Snehapriya.jfif" ,
+      img : "../assets/Members/Outreach/Snehapriya.jfif" ,
    } ,
 ] ;
 
@@ -56,7 +56,7 @@ const outreach_members =
 const problem_solving_members = [
    {
       name : "Anubhav Mishra" ,
-      img : "assets/Members/Problem Solving/Anubhav.jfif" ,
+      img : "../assets/Members/Problem Solving/Anubhav.jfif" ,
    },
 ];
 
@@ -65,7 +65,7 @@ const problem_solving_members = [
 const program_management_members = [
    {
       name:"Soumita Basu",
-      img:"assets/Members/Program Management/Soumita.jfif" ,
+      img:"../assets/Members/Program Management/Soumita.jfif" ,
    },
 ]
 
@@ -74,7 +74,7 @@ const program_management_members = [
 const public_relation_members = [
    {
       name:"Rimika Chowdhary" ,
-      img:"assets/Members/Public Relations/Rimika.jfif" ,
+      img: "../assets/Members/Public Relations/Rimika.jfif" ,
    },
 ]
 
@@ -83,7 +83,7 @@ const public_relation_members = [
 const web_dev_Members = [
    {
       name : "Soham Saha" ,
-      img : "assets/Members/Web Dev/Soham.jfif" ,
+      img : "../assets/Members/Web Dev/Soham.jfif" ,
    },
 ]
 
@@ -94,7 +94,7 @@ const web_dev_Members = [
 const woman_empowerment_members = [
    {
       name : "Abhishikta Pradhan" ,
-      img:"assets/Members/Woman Empowerment/Abhishikta.jfif" ,
+      img: "../assets/Members/Woman Empowerment/Abhishikta.jfif" ,
    },
    // {
    //    name : "MotherFuker Chuitya" ,
@@ -104,9 +104,20 @@ const woman_empowerment_members = [
 
 
 
-// On Screen Display
 
-onload = () => show() ;
+
+
+
+
+// ===================================       On Screen Display             =============================================
+
+onload = () => {
+   show();
+
+   // light/Dark mode
+   if(light=="false")
+      lightDarkEventHandler("false");
+}
 
 const coreMembers = document.getElementById('coreMembers') ;
 
