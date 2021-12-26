@@ -195,3 +195,16 @@ button:hover
 {
    margin-bottom:350px;
 }
+
+
+
+
+.animate{
+   opacity:0;
+   transition:1000ms
+}
+
+.fadeIn{
+   opacity:1;
+   transition:1000ms;
+}

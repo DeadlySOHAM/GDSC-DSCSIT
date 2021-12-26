@@ -14,6 +14,8 @@ onload=()=>{
 
 
 
+// ----------------------------- Disabling inspect options
+
 document.onkeydown = function(e) {
    if(event.keyCode == 123) {
       return false;
@@ -31,8 +33,10 @@ document.onkeydown = function(e) {
       return false;
    }
  }
-   document.oncontextmenu = () =>{ return false ;
-}
+   document.oncontextmenu = () =>{ return false ;}
+   
+//  --------------------------------
+
 
 
 // light / Dark mode
